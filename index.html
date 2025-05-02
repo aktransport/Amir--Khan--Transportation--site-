@@ -7,125 +7,127 @@
   <title>Amir & Khan Transportation LLC</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      color: #333;
-      background: url('/mnt/data/BF034BFA-4357-4CDF-B878-9670134C0F15.png') no-repeat center center fixed;
-      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #fff; color: #000;
     }
     header, footer {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: #222;
       color: white;
+      padding: 20px;
       text-align: center;
-      padding: 20px 0;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-      background-color: rgba(255, 255, 255, 0.95);
     }
     .hero {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: #111;
       color: white;
       padding: 60px 20px;
       text-align: center;
     }
-    .btn {
-      background-color: #ffc107;
-      color: #000;
+    .hero h1 { font-size: 32px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; margin-bottom: 20px; }
+    .hero a {
+      display: inline-block;
       padding: 10px 20px;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .social a {
-      color: #ffc107;
-      font-weight: bold;
+      background-color: gold;
+      color: black;
       text-decoration: none;
+      font-weight: bold;
     }
-    .form-group { margin-bottom: 15px; }
-    input, select, textarea { width: 100%; padding: 10px; margin-top: 5px; }
-    button { padding: 10px 20px; background-color: #000; color: white; border: none; cursor: pointer; }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #000;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+    ul { padding-left: 20px; }
+    .fleet p strong {
+      display: block;
+      margin-top: 10px;
+    }
+    .whatsapp-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .whatsapp-buttons a {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    footer p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Amir & Khan Transportation LLC</h1>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#fleet">Fleet</a>
-    <a href="#booking">Book Now</a>
-    <a href="https://instagram.com/aktransport.la" target="_blank" style="color: white;">Instagram</a>
-  </nav>
 </header>
 
 <div class="hero">
   <h1>Executive Transportation with Comfort & Trust</h1>
   <p>Airport transfers, scheduled rides, and private travel throughout Los Angeles.</p>
-  <a href="#booking" class="btn">Book Now</a>
+  <a href="#book">Book Now</a>
 </div>
 
-<div class="container">
-  <div class="section" id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Airport Transfers (LAX and more)</li>
-      <li>Private and Executive Travel</li>
-      <li>Pre-Scheduled Rides</li>
-      <li>Bilingual Driver Services</li>
-      <li>Extra Comfort: charging cable, leather seats, climate control, and more</li>
-    </ul>
-  </div>
+<section>
+  <h2>About Us</h2>
+  <p>
+    Amir & Khan Transportation LLC provides professional, luxurious, and reliable transportation services in Los Angeles, CA.
+    Whether you need a ride to the airport or a private executive trip, we've got you covered with a high-end fleet and bilingual service.
+  </p>
+</section>
 
-  <div class="section" id="fleet">
-    <h2>Our Fleet</h2>
-    <ul>
-      <li>Mercedes EQS 580</li>
-      <li>Chevrolet Suburban</li>
-    </ul>
-  </div>
+<section>
+  <h2>Our Services</h2>
+  <ul>
+    <li>Airport Transfers (LAX and more)</li>
+    <li>Private and Executive Travel</li>
+    <li>Pre-Scheduled Rides</li>
+    <li>Bilingual Driver Services</li>
+    <li>Extra Comfort: charging cable, leather seats, climate control, and more</li>
+  </ul>
+</section>
 
-  <div class="section" id="booking">
-    <h2>Book Your Ride</h2>
-    <form action="https://formspree.io/f/mgegvzda" method="POST">
-      <div class="form-group"><label>Name:</label><input type="text" name="name" required></div>
-      <div class="form-group"><label>Date:</label><input type="date" name="date" required></div>
-      <div class="form-group"><label>Time:</label><input type="time" name="time" required></div>
-      <div class="form-group"><label>Pickup Location:</label><input type="text" name="pickup" required></div>
-      <div class="form-group"><label>Destination:</label><input type="text" name="destination" required></div>
-      <div class="form-group">
-        <label>Vehicle Preference:</label>
-        <select name="vehicle">
-          <option>Mercedes EQS 580</option>
-          <option>Chevrolet Suburban</option>
-        </select>
-      </div>
-      <div class="form-group"><label>Preferred Language:</label><input type="text" name="language"></div>
-      <button type="submit">Submit Booking</button>
-    </form>
-    <div style="margin-top: 20px;">
-      <p><strong>Or book via WhatsApp:</strong></p>
-      <a href="https://wa.me/17147182296" target="_blank" style="display:inline-block; margin: 5px 10px 5px 0; padding: 10px 20px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px;">Chat with Amir</a>
-      <a href="https://wa.me/13479906202" target="_blank" style="display:inline-block; margin: 5px 0; padding: 10px 20px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px;">Chat with Zain</a>
-    </div>
+<section class="fleet">
+  <h2>Our Fleet</h2>
+  <p><strong>Mercedes EQS 580:</strong> Sleek, luxury electric sedan for modern comfort.</p>
+  <p><strong>Chevrolet Suburban:</strong> Spacious, stylish SUV ideal for group travel.</p>
+</section>
+
+<section>
+  <h2>Testimonials</h2>
+  <p><em>“Excellent service, clean vehicle, and very professional.”</em><br>- Carla M., Los Angeles</p>
+  <p><em>“On time for our LAX pickup and smooth ride. Highly recommended!”</em><br>- Daniel R., Pasadena</p>
+</section>
+
+<section id="book">
+  <h2>Book via WhatsApp</h2>
+  <div class="whatsapp-buttons">
+    <a href="https://wa.me/17147182296" target="_blank">Chat with Amir</a>
+    <a href="https://wa.me/13479906202" target="_blank">Chat with Zain</a>
   </div>
-</div>
+</section>
 
 <footer>
-  <p>Email: <a href="mailto:aktransport.la10@gmail.com" style="color: white; text-decoration: none;">aktransport.la10@gmail.com</a></p>
-  <p><span style="color: #fff;"><span style="color: white;">Phone:</span> <a href="tel:+17147182296" style="color: white; text-decoration: none;">+1 (714) 718-2296</a> | <a href="tel:+13479906202" style="color: white; text-decoration: none;">+1 (347) 990-6202</a></span></p>
-  <p>Website: <a href="https://aktransport.netlify.app" style="color: white;" target="_blank">https://aktransport.netlify.app</a></p>
-  <div class="social">
-    <span style="color: white;">Instagram:</span> <a href="https://instagram.com/aktransport.la" target="_blank" style="color: white;">@aktransport.la</a>
-  </div>
+  <p>Email: <a href="mailto:aktransport.la10@gmail.com">aktransport.la10@gmail.com</a></p>
+  <p>Phone: +1 (714) 718-2296 | +1 (347) 990-6202</p>
+  <p>Website: <a href="https://aktransport.netlify.app" target="_blank">https://aktransport.netlify.app</a></p>
+  <p>Instagram: <a href="https://instagram.com/aktransport.la" target="_blank">@aktransport.la</a></p>
 </footer>
 
 </body>
